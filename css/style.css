@@ -1,0 +1,96 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{height: fit-content;
+  }
+  
+  /* -------------------------------------- Headerr ------------------------------------------- */
+  .rounded-circle{width:45px; height:45px;}
+  .navbar{background-color: rgba(0, 0, 0, 0.8);
+  }
+  .navbar-brand{font-weight: bold;
+                font-size: 1.25rem;
+                transition:0.4s;
+  }
+  .navbar-brand:hover{text-shadow: -2px -1px 10px white;
+  }
+  .nav-link{font-size: 1.1rem;}
+  
+  #search-bar{margin-left:auto}
+  .modal-body > p{font-size: 0.9rem; color: gray;}
+  .carousel-caption{background-color: rgba(89, 89, 89, 0.6); line-height: 60px; border-radius: 15px;}
+  .carousel-caption > h1{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);
+  }
+  .accordion i{position: absolute;
+               right:20px;
+               top:30px;
+               font-size:1.6rem;}
+  
+  .accordion .card:hover #a-accordion{color:white;
+  }
+  .copy1{position: relative;
+         left:40px;
+        }
+  .copy1:after{content:"";
+               position:absolute;
+               background-color:aqua;
+               bottom:-50px;
+               left:-9px;
+               width:75px;
+               border-radius: 5px;
+               display:none;
+              }
+  .copy1:hover::after{content:"copy to clipboard";
+                      display:block;
+                    }
+  .copy1:before{content:"";
+                 position: absolute;
+                background-color: aqua;
+                 bottom:-25px;
+                left:-9px;
+                border-radius: 5px;
+                display:none;
+                width:75px;
+                }
+  .copy1:active::before{content:"copied!";
+                        display:block;
+                      }
+  .copy1:active::after{display:none;
+  }
+  .fixed-image{background-image: url(../images/back4.avif);
+                background-size: cover;
+                background-attachment: fixed;
+                height:250px;
+                 }
+            
+  
+  @media(max-width:992px){
+        .fixed-image{
+                     background-position: -140px 0;}
+  }               
+  @media(max-width:768px){
+        .fixed-image{
+                     background-position: -220px 0;}
+  }
+  @media(max-width:576px){
+    .fixed-image{
+                 background-position: -300px 0;}
+  }
+  .fixed-image2{background-image: url(../images/back2.avif);
+                height:250px;
+                 background-size: cover;
+                 background-attachment: fixed;
+                 position: relative;
+                }
+  .overlay{position: absolute;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0,0,0,.3);}
+  
+  .icon-join{height:30px;
+              width:30px;
+          
+             }
+  #icon-join{height:30px;width:60px;}
+  

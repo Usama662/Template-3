@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template-3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </head>
+
+<body>
+    
+    <!-- --------------- Header ---------------- -->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+        <div class="container-fluid">
+        <image class="rounded-circle" src="images/293100186_384255103814882_8653943648401640118_n.jpg"></image>
+       <a class="navbar-brand" href="#" style="border-right:1px solid white; padding:0px 15px;">HOTEL</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblediv" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="collapsiblediv">
+       
+       <ul class="navbar-nav">
+        <li class="nav-item"> <a href="#" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"> <a href="#" class="nav-link text-white">Link</a></li>
+        <li class="nav-item dropdown"> 
+            <a href="#" class="nav-link text-white dropdown-toggle" role="button" data-toggle="dropdown">Services</a>
+            <div class="dropdown-menu" style="background:rgba( 255, 255, 255, 0.6);">
+                <a href="#" class="dropdown-item text-primary">BOOK A ROOM</a>
+                <a href="#" class="dropdown-item text-primary">Facilities</a>
+                <div class="dropdown-divider bg-primary"></div>
+                <a href="#" class="dropdown-item text-primary">Entertainment</a>
+                <a href="#" class="dropdown-item text-primary">Amenities</a>
+                <a href="#" class="dropdown-item text-primary">Pools</a>
+                <a href="#" class="dropdown-item text-primary">Info&Prices</a>
+                <a href="#" class="dropdown-item text-primary">Gust reviews</a>
+            </div> <!-- dropdown menu -->
+        </li>
+        <li class="nav-item"> <a href="#" class="nav-link text-white">About</a></li>
+       </ul>
+       
+       <form class="d-flex" id="search-bar">
+        <input class="form-control" type="search" placeholder="Search">
+        <button class="btn btn-primary border ml-2">Search</button>
+        <button class="btn btn-primary border ml-2" type="button" data-toggle="modal" data-target="#Mymodal">Login</button>
+       
+        </div> <!-- div modal -->
+       </form>
+    </div> <!-- collapse div -->
+    </div> <!-- container fluid header -->
+
+    </nav>
+
+      <!-- ---------------------------- Main section--------------------------------------- -->
+
+
+
+    <div class="container-fluid p-0">
+        <div class="carousel slide" id="demo" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#demo"></li>
+                <li data-target="#demo"></li>
+                <li data-target="#demo"></li>
+                <li data-target="#demo"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/home6.avif" height="550px" width="100%" alt="this is pic" draggable="false">
+                    <div class="carousel-caption">
+                        <h1>Hotel</h1>
+                        <button class="btn btn-primary">view this service</button>
+                    </div><!-- caption image 1 -->
+                </div> <!-- item 1 -->
+                <div class="carousel-item">
+                    <img src="images/home4.avif" height="550px" width="100%" alt="this is pic" draggable="false">
+                    <div class="carousel-caption">
+                        <h1>Lobby</h1>
+                        <button class="btn btn-primary">view this service</button>
+                    </div><!-- caption image 2 -->
+                </div><!-- item 2 -->
+                <div class="carousel-item">
+                    <img src="images/home5.avif" height="550px" width="100%" alt="this is pic" draggable="false">
+                    <div class="carousel-caption">
+                        <h1>Pools</h1>
+                        <button class="btn btn-primary">view this service</button>
+                    </div><!-- caption image 3 -->
+                </div><!-- item 3 -->
+                <div class="carousel-item">
+                    <img src="images/home1.jpg" height="550px" width="100%" alt="this is pic" draggable="false">
+                    <div class="carousel-caption">
+                        <h1>Rooms</h1>
+                        <button class="btn btn-primary">view this service</button>
+                    </div><!-- caption image 4 -->
+                </div><!-- item 4 -->
+            </div> <!-- carousel inner -->
+            <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a><!-- previous -->
+            <a href="#demo" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a><!-- next -->
+        </div> <!-- carousel slide -->
+    </div> <!-- container-fluid of carousel -->
+
+
+
+    <!--------------------------- Welcome section ------------------------------ -->
+
+
+    <div class="container-fluid bg-dark pl-5 pt-5 pb-5" style="line-height: 60px;">
+        <h1 style="color:white; letter-spacing: 1.5px;">Welcome</h1>
+        <h6 style="color:white">About Our Website</h6>
+        <a href="#" class="btn btn-primary">Learn more</a>
+    </div> <!-- welcome container fluid -->
+
+
+
+<!-- ------------------------------   Deals------------------------------------------------ -->
+
+
+    <div class="container-fluid bg-secondary text-center" style="font-size:2.5rem; height:120px;color:white;padding-top: 30px;">Offers</div> 
+
+    <div class="accordion" id="accordion-example">
+        <div class="card" data-toggle="collapse" data-target="#collapse1" style="cursor:pointer;">
+            <div class="card-header btn-outline-primary" id="heading1">
+                <h2 class="clear-fix">
+                    <a class="btn" id="a-accordion" style="font-size:1.25rem" >Honeymoon offers<i class="fa fa-angle-down"></i></a>
+                </h2>
+            </div> <!-- card header 1 -->
+            <div class="collapse" id="collapse1" data-parent="#accordion-example">
+                <div class="card-body">Book your trip with Booking.com enjoy Honeymoon Offers , and packages up to 15% discount</div> <!-- card body1 -->
+            </div><!-- div collapse 1 -->
+        </div><!-- card item 1 -->
+
+        <div class="accordion" id="accordion-example">
+            <div class="card" data-toggle="collapse" data-target="#collapse2" style="cursor:pointer;">
+                <div class="card-header btn-outline-primary" id="heading1">
+                    <h2 class="clear-fix">
+                        <a class="btn" id="a-accordion" style="font-size:1.25rem" >Hotels offers<i class="fa fa-angle-down"></i></a>
+                    </h2>
+                </div> <!-- card header 1 -->
+                <div class="collapse" id="collapse2" data-parent="#accordion-example">
+                    <div class="card-body">Discover the luxurious hotels around the world</div> <!-- card body1 -->
+                </div><!-- div collapse 1 -->
+            </div><!-- card item 1 -->
+
+            <div class="accordion" id="accordion-example">
+                <div class="card" data-toggle="collapse" data-target="#collapse3" style="cursor:pointer;">
+                    <div class="card-header btn-outline-primary" id="heading1">
+                        <h2 class="clear-fix">
+                            <a class="btn" id="a-accordion" style="font-size:1.25rem" >Book now & pay later<i class="fa fa-angle-down"></i></a>
+                        </h2>
+                    </div> <!-- card header 1 -->
+                    <div class="collapse" id="collapse3" data-parent="#accordion-example">
+                        <div class="card-body">Pay in installments with Booking.com</div> <!-- card body1 -->
+                    </div><!-- div collapse 1 -->
+                </div><!-- card item 1 -->
+
+
+<!-- ---------------------------------------activities --------------------------------------------------->
+
+
+<div class="container-fluid bg-secondary text-center" style="font-size:2.5rem; height:120px;color:white;padding-top: 30px;">Activities</div>
+<div class="card bg-dark" style="height: 210px;">
+    <div class="card-body">
+        <h4 class="text-light">Visit our website 
+        <a href="https://vdara.mgmresorts.com/en.html" target="_blank">Here</a> </h4>
+        <br><br>
+        <div class="btn btn-outline-light btn-md copy1">copy</div>
+    </div><!-- card body -->
+</div><!-- card -->
+
+
+<!-- --------------------------------- Group Travel ------------------------------------------------- -->
+
+
+<div class="container-fluid bg-secondary text-center" style="font-size:2.5rem; height:120px;color:white;padding-top: 30px;">Groups & Weddings</div>
+<div class="card bg-dark" style="height: 210px;">
+    <div class="card-body">
+        <h4 class="text-light">Visit our website  
+        <a href="https://vdara.mgmresorts.com/en.html" target="_blank">Here</a> </h4>
+        <br><br>
+        <div class="btn btn-outline-light btn-md copy1">copy</div>
+    </div><!-- card body -->
+</div><!-- card -->
+
+
+<!-- --------------------------------- domestic flights ----------------------------------------------------->
+
+
+<div class="container-fluid bg-secondary text-center" style="font-size:2.5rem; height:120px;color:white;padding-top: 30px;">Amenities</div>
+<div class="card bg-dark" style="height: 210px;">
+    <div class="card-body">
+        <h4 class="text-light">Visit our website  
+        <a href="https://vdara.mgmresorts.com/en.html" target="_blank">Here</a> </h4>
+        <br><br>
+        <div class="btn btn-outline-light btn-md copy1">copy</div>
+    </div><!-- card body -->
+</div><!-- card -->
+
+
+<!----------------------------------- fixed image ----------------------------------------------------------->
+
+
+<div class="container-fluid bg-secondary" style="height: 50px;"></div>
+<div class="fixed-image"></div> <!-- fixed image -->
+
+
+<!-- -------------------------------- Top Destinations ------------------------------------------------------- -->
+
+
+<div class="container-fluid text-center" style="font-size:2.5rem; height:80px;color:white;padding-top: 15px; background-color: rgb(64, 63, 63);">Entertainment</div>
+
+<div class="container-fluid bg-secondary" style="height:fit-content;">
+
+<div class="row justify-content-around pb-5">
+
+<div class="card bg-dark pr-2 pl-2 mt-5 " style="width: 285px;">
+    <img src="images/golf.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Golf</h4>
+        <p class="card-text text-light">Our Golf services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width: 285px;">
+    <img src="images/dining.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">In-Suite Dining</h4>
+        <p class="card-text text-light">Our In-Suite Dining services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width: 285px;">
+    <img src="images/cinema.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Cinema</h4>
+        <p class="card-text text-light">Our cinema services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width: 285px;">
+    <img src="images/pools.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Pools</h4>
+        <p class="card-text text-light">Our Pools services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width: 285px;">
+    <img src="images/Diving.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Diving</h4>
+        <p class="card-text text-light">Our Diving services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width: 285px;" >
+    <img src="images/safari2.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Safari</h4>
+        <p class="card-text text-light">Our safari services are available daily.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+<div class="card bg-dark pr-2 pl-2 mt-5" style="width:285px;" >
+    <img src="images/Fitness Center1.jpg" alt="hong kong" class="card-img-top" style="width:100%; height: 260px;">
+    <div class="card-body">
+        <h4 class="card-title text-light">Fitness Center</h4>
+        <p class="card-text text-light">Make yourself comfortable in our naturally lit Fitness Center.</p>
+        <a href="#" class="btn btn-primary">Tap for Reservation</a>
+    </div><!-- card-body -->
+</div> <!-- card -->
+
+</div><!-- row -->
+</div> <!-- container-fluid top destinations -->
+
+
+<!------------------------------------------   fixed image 2 ----------------------------------------- -->
+
+
+<div class="container-fluid bg-secondary" style="height: 50px;"></div>
+<div class="fixed-image2">
+    <div class="overlay"></div>
+</div> <!-- fixed image -->
+
+
+<!------------------------------------------- thanks for our family ---------------------------------------->
+
+
+<div class="container-fluid bg-secondary text-center pt-4 pb-5" style="height:fit-content;">
+    <h2 class="text-light">Thanks For</h2>
+    <div class="container row m-auto justify-content-center p-0">
+
+        <div class="card bg-dark text-left pr-2 pl-2 m-3 col-lg-3 col-md-5 col-sm-6" style="width:285px;">
+            <img src="images/GetImage.jpg" alt="captain" class="card-img-top" style="width: 100%; height:290px;">
+            <div class="card-body">
+                <h5 class="card-title text-light">CEO : john Doe</h5>
+            </div><!--  card body -->
+        </div> <!-- card -->
+
+        <div class="card bg-dark text-left pr-2 pl-2 m-3 col-lg-3 col-md-5 col-sm-6" style="width:285px;">
+            <img src="images/admin.webp" alt="captain" class="card-img-top" style="width: 100%; height:290px;">
+            <div class="card-body">
+                <h5 class="card-title text-light">VP : john Doe</h5>
+            </div><!--  card body -->
+        </div> <!-- card -->
+
+        <div class="card bg-dark text-left pr-2 pl-2 m-3 col-md-5 col-lg-3 col-sm-6" style="width:285px;">
+            <img src="images/staff.jpg" alt="captain" class="card-img-top" style="width: 100%; height:290px;">
+            <div class="card-body">
+                <h5 class="card-title text-light">STaff</h5>
+            </div><!--  card body -->
+        </div> <!-- card -->
+
+    </div> <!-- container  -->
+    <br><hr>
+    <h1 class="text-light">Join us</h1>
+    <div class="row justify-content-center">
+        <div class="card bg-dark m-3" style="width:18rem; line-height: 30px;">
+            <div class="card-body">
+                <h4 class="card-title text-light">Subscribe now</h4>
+                <img src="images/facebook-512.jpg" alt="facebook" class="icon-join">
+                <a href="#" style="display:block;">Go to link</a>
+            </div><!-- card body -->
+        </div><!-- card -->
+
+        <div class="card bg-dark m-3" style="width:18rem; line-height: 30px;">
+            <div class="card-body">
+                <h4 class="card-title text-light">Subscribe now</h4>
+                <img src="images/instgram1.jpg" alt="facebook" class="icon-join">
+                <a href="#" style="display:block;">Go to link</a>
+            </div><!-- card body -->
+        </div><!-- card -->
+
+        <div class="card bg-dark m-3" style="width:18rem; line-height: 30px;">
+            <div class="card-body">
+                <h4 class="card-title text-light">Subscribe now</h4>
+                <img src="images/Twitter-Emblem2.png" alt="facebook" id="icon-join">
+                <a href="#" style="display:block;">Go to link</a>
+            </div><!-- card body -->
+        </div><!-- card -->
+
+        <div class="card bg-dark m-3" style="width:18rem; line-height: 30px;">
+            <div class="card-body">
+                <h4 class="card-title text-light">Subscribe now</h4>
+                <img src="images/linkedin.png" alt="facebook" class="icon-join">
+                <a href="#" style="display:block;">Go to link</a>
+            </div><!-- card body -->
+        </div><!-- card -->
+    </div> <!--  row-join us -->
+</div> <!-- container-fluid family -->
+
+
+<!--------------------------------------------- Footer ---------------------------------------------------------- -->
+
+
+<footer class="bg-dark pt-3 pb-5" style="height:fit-content ;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="text-light col-md-4 text-center">
+            <hr class="border-light border-top">
+            <h5><img src="images/facebook-512.jpg" alt="facebook" class="icon-join">&nbsp; Hotel</h5>
+            <hr class="border-bottom">
+            <div class="adress">
+                <p>Tel : 000-000-000</p>
+                <p>Address : EGYPT</p>
+                <p>Fax : 000-000-000</p>
+            </div><!-- adress -->
+        </div><!--  div1 -->
+
+        <div class="text-light col-md-4 text-center">
+            <hr class="border-light border-top">
+            <h5><img src="images/facebook-512.jpg" alt="facebook" class="icon-join">&nbsp; important links</h5>
+            <hr class="border-bottom">
+            <div class="adress">
+                <p><a href="" target="_blank">Visit Us</a></p>
+                <p><a href="" target="_blank">Take alook</a></p>
+                <p><a href="" target="_blank">Your health is more important</a></p>
+            </div><!-- adress -->
+        </div><!--  div1 -->
+
+        <div class="text-light col-md-4 text-center">
+            <hr class="border-light border-top">
+            <h5><img src="images/facebook-512.jpg" alt="facebook" class="icon-join">&nbsp; Vision</h5>
+            <hr class="border-bottom">
+            <div class="adress">
+                <p>Serveices for all </p>
+                <p>Provide best serveices</p>
+                <p>you will be better than before</p>
+            </div><!-- adress -->
+        </div><!--  div1 -->
+        </div><!-- row -->
+        <br><hr class="border-light">
+        <p class="text-light text-center">Copyright © 2023 Osama Elsayed, Hotels. All rights</p>
+        <hr class="border-light">
+
+    </div> <!-- container-fluid -->
+</footer>
+
+
+    <!------------------------------------------- Modal ---------------------------------------------- -->
+    
+    
+    <div class="modal fade" id="Mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div><!-- modal header -->
+                <div class="modal-body">
+                    <form class="form-group">
+                        <label for="email">Email adress</label>
+                        <input type="email" class="form-control">
+                        <p>we'll never share your email with anyone else<p>
+                        
+                        <label for="password">Enter your Password</label>
+                        <input type="password" class="form-control">
+                        <br>
+                        <div class="custom-control custom-switch">
+                        <input class="custom-control-input" type="checkbox" id="switch1" checked>
+                        <label class="custom-control-label" for="switch1">Remember Me</label>
+                        </div> <!-- form switch -->
+                        <br><br>
+                        <button class="btn btn-primary btn-lg ml-2">Login</button>
+                    </form> <!-- form modal body -->
+                </div><!-- modal-body -->
+                <div class="modal-footer">
+                    <button class="btn btn-dark" type="button" data-dismiss="modal">Close</button>
+                </div><!-- modal footer -->
+            </div><!-- modal content -->
+        </div><!-- modal dialog -->
+      
+
+
+</body>
+</html>
